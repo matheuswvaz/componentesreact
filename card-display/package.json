@@ -1,0 +1,39 @@
+{
+  "name": "@seu-usuario-github/react-card-display",
+  "version": "1.0.0",
+  "description": "Um componente React reutilizável para exibir conteúdo (links ou imagens) em um modal com animações.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "carddisplay",
+    "framer-motion",
+    "reusable-component"
+  ],
+  "author": "Seu Nome <seuemail@example.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "framer-motion": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "postcss": "^8.0.0",
+    "cssnano": "^6.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}

@@ -1,0 +1,95 @@
+/* Styles/CardDisplay.css */
+
+.card-display-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que o modal esteja acima de outros elementos */
+}
+
+.card-display-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden; /* Garante que a imagem ou link não transborde */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Necessário para posicionar o botão de fechar */
+}
+
+.card-display-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+  line-height: 1;
+}
+
+.card-display-close-button:hover {
+  color: #f00;
+}
+
+.card-display-content h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-display-content p {
+  color: #555;
+  text-align: center;
+  word-break: break-all; /* Quebra palavras longas para evitar overflow */
+}
+
+.card-display-link-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-display-link-text a:hover {
+  text-decoration: underline;
+}
+
+.card-display-action-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.card-display-action-button:hover {
+  background-color: #0056b3;
+}
+
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Ajusta para que a imagem preencha o container do modal */
+}
+
+.card-image-container img {
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
